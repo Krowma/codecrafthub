@@ -132,49 +132,13 @@ Each course is stored using the following structure:
 
 ### Course Fields
 
-|
- Field 
-|
- Description 
-|
-|
+Field Description 
 ---
-|
----
-|
-|
-`id`
-|
- Automatically generated numeric ID starting from 
-`1`
-|
-|
-`name`
-|
- Required course name 
-|
-|
-`description`
-|
- Required course description 
-|
-|
-`target_date`
-|
- Required date in 
-`YYYY-MM-DD`
- format 
-|
-|
-`status`
-|
- Required course status 
-|
-|
-`created_at`
-|
- Automatically generated timestamp 
-|
+**`id`** Automatically generated numeric ID starting from `1`\
+**`name`** Required course name\
+**`description`** Required course description\
+**`target_date`** Required date in `YYYY-MM-DD` format\
+**`status`** Required course status `created_at` Automatically generated timestamp
 
 ## API Documentation
 
@@ -500,46 +464,14 @@ Invalid example:
 
 ## HTTP Status Codes
 
-|
- Status Code 
-|
- Meaning 
-|
-|
----
-|
----
-|
-|
-`200 OK`
-|
- Request completed successfully 
-|
-|
-`201 Created`
-|
- A new course was created 
-|
-|
-`204 No Content`
-|
- A course was deleted successfully 
-|
-|
-`400 Bad Request`
-|
- Request data is missing or invalid 
-|
-|
-`404 Not Found`
-|
- The requested route or course does not exist 
-|
-|
-`500 Internal Server Error`
-|
- A server or file-system error occurred 
-|
+**Status Codes**
+
+**`200 OK`** Request completed successfully\
+**`201 Created`** A new course was created\
+**`204 No Content`** A course was deleted successfully\
+**`400 Bad Request`** Request data is missing or invalid\
+**`404 Not Found`** The requested route or course does not exist\
+**`500 Internal Server Error`** A server or file-system error occurred
 
 ## Troubleshooting
 
