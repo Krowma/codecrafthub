@@ -175,7 +175,7 @@ function validateCourseUpdateData(courseData) {
 
   // Only validate target_date if it was included
   if (Object.prototype.hasOwnProperty.call(courseData, "target_date")) {
-    if (!isValidDateFormat(courseData.target_date)) {
+    if (!isValidDate(courseData.target_date)) {
       errors.push("target_date must use the format YYYY-MM-DD");
     }
   }
